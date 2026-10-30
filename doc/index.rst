@@ -21,7 +21,7 @@ Pataky TC (2016) rft1d: Smooth One-Dimensional Random Field Upcrossing Probabili
 
 **Support**
 
-Please submit bug reports and questions to `rft1d's GitHub site <https://github.com/0todd0000/rft1d/>`_.
+Please submit bug reports and questions to `rft1d's GitHub site <https://github.com/spm1d-org/rft1d/>`_.
 
 
 

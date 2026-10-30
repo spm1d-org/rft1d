@@ -19,7 +19,7 @@ Automated installation
 Source code download
 ----------------------------
 
-Visit rft1d's `GitHub repository <https://github.com/0todd0000/rft1d/>`_
+Visit rft1d's `GitHub repository <https://github.com/spm1d-org/rft1d/>`_
 
 
 

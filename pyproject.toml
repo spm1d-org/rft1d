@@ -40,8 +40,8 @@ dependencies = [
 
 [project.urls]  # Optional
 "Homepage"    = "https://www.spm1d.org/rft1d"
-"Source"      = "https://github.com/0todd0000/rft1d"
-"Bug Reports" = "https://github.com/0todd0000/rft1d/issues"
+"Source"      = "https://github.com/spm1d-org/rft1d"
+"Bug Reports" = "https://github.com/spm1d-org/rft1d/issues"
 
 
 

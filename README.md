@@ -79,7 +79,7 @@ Development
 The package uses a `src` layout, and the test suite adds `./src` to `sys.path` itself (see `tests/conftest.py`), so no installation step is needed to work on the source:
 
 ```
-git clone https://github.com/0todd0000/rft1d.git
+git clone https://github.com/spm1d-org/rft1d.git
 cd rft1d
 pip install pytest numpy scipy matplotlib
 ```
@@ -122,4 +122,4 @@ ___
 Issues
 ------
 
-Please report software bugs or other problems by searching existing issues or creating a new issue [here](https://github.com/0todd0000/rft1d/issues).
+Please report software bugs or other problems by searching existing issues or creating a new issue [here](https://github.com/spm1d-org/rft1d/issues).
