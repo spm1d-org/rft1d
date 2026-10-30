@@ -31,6 +31,10 @@ Documentation is available at:
 
 <br>
 
+Find this package useful? Please press star ★ , thank you!
+
+<br>
+
 
 
 ___
@@ -97,6 +101,17 @@ The tests are:
   against hand-calculated values.
 * `test_random_rng.py` checks that random fields are reproducible when a seed
   or generator is passed as `rng`.
+
+
+
+___
+
+
+
+Contributing
+------------
+
+Please see the [spm1d.org contributing guidelines and AI policy](https://spm1d.org/contributing/).
 
 
 
