@@ -1,12 +1,13 @@
 
-__version__ = '0.2.8'  # 2026-10-01
+__version__ = '0.2.9'  # 2026-11-01
 
-__all__ = ['distributions', 'geom', 'prob', 'random']
+__all__ = ['distributions', 'geom', 'prob', 'random', 'get_config']
 
 from . import distributions
 from . import geom
 from . import prob
 from . import random
+from . _support import get_config
 
 randn1d      = random.randn1d
 multirandn1d = random.multirandn1d
