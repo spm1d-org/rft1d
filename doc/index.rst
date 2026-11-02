@@ -47,5 +47,6 @@ Contents
 
 	API.rst
 	References.rst
+	support.rst
 
 
