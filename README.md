@@ -3,7 +3,7 @@
 [![Scipy](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)](https://scipy.org)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![version](https://img.shields.io/badge/version-0.2.9-blue)
-![downloads](https://static.pepy.tech/badge/rft1d/month)
+[![downloads](https://img.shields.io/pypi/dm/rft1d?label=downloads)](https://pypistats.org/packages/rft1d)
 
 rft1d
 =====
