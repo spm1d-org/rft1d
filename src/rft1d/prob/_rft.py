@@ -104,6 +104,9 @@ def poisson_cdf(a, b):
     return p
 
 
+# Translated from SPM12 spm_P_RF.m:
+# Copyright (C) 1999-2013 Wellcome Trust Centre for Neuroimaging
+# Karl Friston
 def rft(c, k, STAT, Z, df, R, n=1, Q=None, expectations_only=False, version='spm12', _0d_check=True):
     '''
     Random Field Theory probabilities and expectations using unified Euler Characteristic (EC) theory.

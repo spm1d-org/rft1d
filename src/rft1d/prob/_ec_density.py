@@ -18,6 +18,9 @@ import numpy as np
 from ._constants import FOUR_LOG2, SQRT_4LOG2, TWO_PI
 
 
+# Translated from SPM12 spm_ECdensity.m:
+# Copyright (C) 1999-2013 Wellcome Trust Centre for Neuroimaging
+# Karl Friston
 def ec_density_Z(z):
     from scipy import stats
     # note: "1 - cdf" (rather than "sf") is retained to match SPM
@@ -26,6 +29,9 @@ def ec_density_Z(z):
     return [ec0d, ec1d]
 
 
+# Translated from SPM12 spm_ECdensity.m:
+# Copyright (C) 1999-2013 Wellcome Trust Centre for Neuroimaging
+# Karl Friston
 def ec_density_T(z, df):
     '''
     Reference:  Worsley KJ et al. (1996) Hum Brain Mapp 4:58-73
@@ -42,6 +48,9 @@ def ec_density_T(z, df):
     EC.append(  a**0.5 / TWO_PI * c  )   #dim: 1
     return EC
 
+# Translated from SPM12 spm_ECdensity.m:
+# Copyright (C) 1999-2013 Wellcome Trust Centre for Neuroimaging
+# Karl Friston
 def ec_density_F(z, df):
     from scipy import stats
     from scipy.special import gammaln
@@ -56,6 +65,9 @@ def ec_density_F(z, df):
     EC.append(  a**0.5 * np.exp(gammaln((v+k-1)/2)-b)*2**0.5 *(k*z/v)**(0.5*(k-1))*(1+k*z/v)**(-0.5*(v+k-2))  )
     return EC
 
+# Translated from SPM12 spm_ECdensity.m:
+# Copyright (C) 1999-2013 Wellcome Trust Centre for Neuroimaging
+# Karl Friston
 def ec_density_X2(z, df):
     from scipy import stats
     from scipy.special import gammaln
