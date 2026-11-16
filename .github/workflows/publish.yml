@@ -28,7 +28,7 @@ permissions:
 jobs:
 
   check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v6
@@ -59,7 +59,7 @@ jobs:
   pypi:
     name: build and upload to PyPI
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v6
@@ -84,7 +84,7 @@ jobs:
 
   release:
     needs: pypi
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Create the GitHub Release
