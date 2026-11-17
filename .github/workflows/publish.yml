@@ -12,18 +12,17 @@ name: publish
 # upload to PyPI;  create the GitHub Release with automatic notes;  build the
 # docs and signal spm1d.org.  Pushing commits (to any branch) publishes nothing.
 #
-# The token-based upload below still works;  PyPI's recommended alternative is
-# Trusted Publishing, which removes the stored secret entirely.  To switch:
-# configure this repository and workflow as a trusted publisher on PyPI, add
-# "permissions: id-token: write" to the pypi job, and drop the "password"
-# input.  See https://docs.pypi.org/trusted-publishers/
+# The upload uses PyPI Trusted Publishing, so no token is stored.  The PyPI
+# project must list this repository, the workflow publish.yml and the
+# environment pypi as a trusted publisher.
+# See https://docs.pypi.org/trusted-publishers/
 
 on:
   push:
     tags: ['v*']
 
 permissions:
-  contents: write                         # to create the GitHub Release
+  contents: read
 
 jobs:
 
@@ -60,6 +59,10 @@ jobs:
     name: build and upload to PyPI
     needs: test
     runs-on: ubuntu-24.04
+    environment: pypi
+    permissions:
+      contents: read
+      id-token: write                     # Trusted Publishing
 
     steps:
       - uses: actions/checkout@v6
@@ -79,12 +82,12 @@ jobs:
 
       - name: Publish
         uses: pypa/gh-action-pypi-publish@v1.14.3
-        with:
-          password: ${{ secrets.PYPI_TOKEN }}
 
   release:
     needs: pypi
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write                     # to create the GitHub Release
 
     steps:
       - name: Create the GitHub Release
