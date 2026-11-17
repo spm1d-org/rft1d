@@ -8,7 +8,7 @@ Results from the paper
 
 These scripts are located in **./rft1d/examples/paper** and reproduce the figures from:
 
-	Pataky TC (2015) RFT1D: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** (accepted for publication 18 April 2015).
+	Pataky TC (2016) rft1d: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** 71(7): 1–22.
 
 .. note:: The dataset associated with Figures 13, 15, 16 and 17 is available in **./rft1d/examples/_rft1d_data.py**
 

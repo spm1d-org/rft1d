@@ -59,7 +59,7 @@ Literature
 
 #. Nichols T, Holmes A (2002). Nonparametric permutation tests for functional neuroimaging: a primer with examples. *Human Brain Mapping* 15(1), 1–25.
 
-#. Pataky TC (2015) RFT1D: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** (accepted for publication 18 April 2015).
+#. Pataky TC (2016) rft1d: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** 71(7): 1–22.
 
 #. Taylor JE, Worsley KJ (2008). Random fields of multivariate test statistics, with applications to shape analysis. *Annals of Statistics* 36(1), 1–27.
 
