@@ -32,19 +32,21 @@ y          = gaussian_filter1d(y, sd, axis=1, mode='wrap')
 #scale to unit variance:
 '''
 Restore filtered data to unit variance.
-This code is modified from "randomtalk.m" by Matthew Brett (Oct 1999)
-Downloaded from http://www.fil.ion.ucl.ac.uk/~wpenny/mbi/index.html on 1 Aug 2014
+
+Smoothing independent unit-variance noise with a kernel g yields noise
+with variance sum(g**2), so the scaling factor is 1 / sqrt( sum(g**2) ).
+
+Acknowledgement: this correction was first seen in "randomtalk.m" by
+Matthew Brett (Oct 1999), downloaded from
+http://www.fil.ion.ucl.ac.uk/~wpenny/mbi/index.html on 1 Aug 2014.
+The code below is implemented from the mathematics above.
 '''
 ### define Gaussian kernel
 t          = np.arange(  -0.5*(nNodes-1) , 0.5*(nNodes-1)+1  )
-gf         = np.exp(-(t**2) / (2*sd**2))
-gf        /= gf.sum()
-### expected variance for this kernel
-AG         = np.fft.fft(gf)
-Pag        = AG * np.conj(AG)  #power of the noise
-COV        = np.real( np.fft.ifft(Pag) )
-svar       = COV[0]
-scale      = np.sqrt(1.0/svar)
+g          = np.exp(-(t**2) / (2*sd**2))
+g         /= g.sum()
+### scaling factor
+scale      = 1.0 / np.sqrt( (g**2).sum() )
 ### scale the data:
 y         *= scale
 
