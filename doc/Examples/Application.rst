@@ -11,12 +11,10 @@ Example dataset
 -------------------------------------------
 
 Consider the "weather" dataset depicted in the figure below.
-This dataset is publicly available at 
-http://www.psych.mcgill.ca/misc/fda/downloads/FDAfuns/Matlab
-in the “weather.zip” folder.
-The dataset is described in detail here:
-http://www.psych.mcgill.ca/misc/fda/ex-weather-a1.html
-and also in the book:
+This dataset is distributed with the R package "fda":
+https://cran.r-project.org/package=fda
+as "CanadianWeather".
+The dataset is described in the book:
 
 	Ramsay JO, Silverman BW (2005). **Functional Data Analysis**
 	(Second Edition), Springer, New York. (see Chapter 13:
