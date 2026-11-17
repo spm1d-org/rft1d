@@ -1,7 +1,7 @@
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org)
 [![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
 [![Scipy](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)](https://scipy.org)
-[![License: GPL-3.0-or-later](https://img.shields.io/badge/License-GPL--3.0--or--later-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![version](https://img.shields.io/badge/version-0.2.10-blue)
 [![downloads](https://img.shields.io/pypi/dm/rft1d?label=downloads)](https://pypistats.org/packages/rft1d)
 
@@ -18,7 +18,7 @@ observed in experimentally measured 1D continua including scalar and vector time
 <b>Please cite:</b>
 
 Pataky TC (2016) RFT1D: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python.
-<b>Journal of Statistical Software</b> 71(7): 1-22. https://doi.org/10.18637/jss.v071.i07
+<b>Journal of Statistical Software</b> 71(7): 1–22. https://doi.org/10.18637/jss.v071.i07
 
 <br>
 
@@ -27,7 +27,7 @@ Pataky TC (2016) RFT1D: Smooth One-Dimensional Random Field Upcrossing Probabili
 <br>
 
 Documentation is available at:
-[www.spm1d.org/rft1d](http://spm1d.org/rft1d)
+[spm1d.org/rft1d](https://spm1d.org/rft1d)
 
 <br>
 
@@ -50,7 +50,7 @@ pip install rft1d
 
 **rft1d** requires Python 3.9 or later, along with [numpy](https://numpy.org), [scipy](https://scipy.org) and [matplotlib](https://matplotlib.org).
 
-**rft1d** has been tested on Python 3.9 through 3.13.
+**rft1d** has been tested on Python 3.10 through 3.14.
 
 
 

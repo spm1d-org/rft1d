@@ -1,7 +1,7 @@
 [project]
 name            = "rft1d"
 version         = "0.2.10"
-description     = "'One-Dimensional Random Field Theory"
+description     = "One-Dimensional Random Field Theory"
 readme          = "README.md"
 requires-python = ">=3.9"
 license         = "GPL-3.0-or-later"
@@ -23,7 +23,11 @@ authors         = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Topic :: Scientific/Engineering",
-    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 
 
@@ -38,7 +42,7 @@ dependencies = [
 
 
 [project.urls]  # Optional
-"Homepage"    = "https://www.spm1d.org/rft1d"
+"Homepage"    = "https://spm1d.org/rft1d"
 "Source"      = "https://github.com/spm1d-org/rft1d"
 "Bug Reports" = "https://github.com/spm1d-org/rft1d/issues"
 

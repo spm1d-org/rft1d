@@ -13,7 +13,7 @@ observed in experimentally measured 1D continua including scalar and vector time
 
 **Please cite:**
 
-Pataky TC (2016) rft1d: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** 71 : i07.  http://dx.doi.org/10.18637/jss.v071.i07
+Pataky TC (2016) rft1d: Smooth One-Dimensional Random Field Upcrossing Probabilities in Python. **Journal of Statistical Software** 71(7): 1–22.  http://dx.doi.org/10.18637/jss.v071.i07
 
 
 
